@@ -100,7 +100,7 @@ Matrix<int> HMM::calcViterbi(){
         delta.mtrx[0][i] = B.mtrx[i][O.mtrx[0][0]]*pi.mtrx[0][i];
     }
 
-    double currMax = 0, prevMax = 0, idxMax = 0;
+    double currMax = 0, prevMax = 0;
 
     for(int t= 1; t<T; t++){
         for(int i=0; i<N; i++){
